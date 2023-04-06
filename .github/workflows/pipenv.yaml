@@ -64,12 +64,11 @@ jobs:
         if: success() || failure()
         run: |
           pipenv install pylint
-          pipenv run pylint main.py
+          pipenv run pylint
 
       - name: Run formatting check
         if: success() || failure()
         run: |
-          pipenv install format
           pipenv run format --check
 
       - name: Setup node.js (for pyright)
@@ -82,5 +81,4 @@ jobs:
         if: success() || failure()
         run: |
           npm install -g pyright
-          pipenv install typecheck
           pipenv run typecheck
