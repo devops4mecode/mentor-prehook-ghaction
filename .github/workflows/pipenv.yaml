@@ -37,6 +37,7 @@ jobs:
       - name: Install pipenv
         run: |
           python -m pip install --upgrade pipenv wheel
+          pipenv shell
 
       - id: cache-pipenv
         uses: actions/cache@v1
