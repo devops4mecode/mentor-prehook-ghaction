@@ -1,9 +1,9 @@
-[project]
-name = "titanic_ml"
-description = "titanic_ml example package"
+[tool.poetry]
+name = "Python Checking"
+description = "Python Checking"
 version = "0.1.0"
 authors = [
-    { name = "Niels Zeilemaker", email = "nielszeilemaker@godatadriven.com" }
+    { name = "Najib Radzuan", email = "iamnajibradzuan@gmail.com" }
 ]
 dependencies = [
     "pyspark[ml]",
