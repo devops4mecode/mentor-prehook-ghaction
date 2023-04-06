@@ -6,11 +6,8 @@ name = "pypi"
 [packages]
 
 [dev-packages]
-python = ">=3.8"
-flask = "1.0.0"
-safety = "2.3.5"
-flake8 = ">=3.8.1,<4.0"
-pytest = "7.2.2"
+lint = "2.0.0"
+pyright = "1.1.302"
 
 [requires]
 python_version = "3.11"
