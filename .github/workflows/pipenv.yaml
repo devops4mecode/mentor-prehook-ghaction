@@ -64,7 +64,7 @@ jobs:
         if: success() || failure()
         run: |
           pipenv install pylint
-          pipenv run pylint
+          pipenv run pylint main.py
 
       - name: Run formatting check
         if: success() || failure()
