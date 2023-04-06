@@ -61,7 +61,6 @@ jobs:
 
       - name: Run linter
         run: |
-          npm install -g lint
           pipenv run lint
 
       - name: Run formatting check
