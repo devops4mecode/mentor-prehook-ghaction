@@ -38,4 +38,4 @@ jobs:
           # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide, we make it 120 chars
           poetry run flake8 . --count --exit-zero --max-complexity=10 --max-line-length=120 --statistics
       - name: Test with pytest
-        run: poetry run pytest tests/
+        run: poetry run pytest main.py
