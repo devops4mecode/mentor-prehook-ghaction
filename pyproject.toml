@@ -2,21 +2,18 @@
 name = "Python Checking"
 description = "Python Checking"
 version = "0.1.0"
-authors = [
-    { name = "Najib Radzuan", email = "iamnajibradzuan@gmail.com" }
-]
+authors = ["Najib Radzuan <iamnajibradzuan@gmail.com>"]
 dependencies = [
     "pyspark[ml]",
     "sklearn"
 ]
 
-[project.optional-dependencies]
-dev = [
-    "tox",
-    "pre-commit",
-    "bump2version"
-]
+[tool.poetry.dependencies]
+python = "^3.8"
+flask = "1.0.0"
+
+[tool.poetry.dev.dependencies]
 
 [build-system]
-build-backend = "flit_core.buildapi"
-requires = ["flit_core >=3.2,<4"]
+requires = ["poetry_core >=1.0.0"]
+build-backend = "poetry.core.masonry.api"
