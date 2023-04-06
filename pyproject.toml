@@ -9,6 +9,7 @@ python = "^3.8"
 flask = "1.0.0"
 safety = "2.3.5"
 flake8 = "6.0.0"
+pytest = "7.2.2"
 
 [build-system]
 requires = ["poetry_core >=1.0.0"]
