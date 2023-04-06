@@ -62,7 +62,7 @@ jobs:
       - name: Run linter
         run: |
           pipenv install pylint
-          pipenv run pylint
+          pipenv run pylint main.py
 
       - name: Run formatting check
         run: |
