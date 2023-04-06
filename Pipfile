@@ -4,11 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+lint = "*"
 
 [dev-packages]
 pyright = "*"
 black = "*"
 pylint = "*"
+pre-commit = "*"
 
 [requires]
 python_version = "3.11"
