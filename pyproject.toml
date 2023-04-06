@@ -7,6 +7,7 @@ authors = ["Najib Radzuan <iamnajibradzuan@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 flask = "1.0.0"
+safety = "2.3.5"
 
 [build-system]
 requires = ["poetry_core >=1.0.0"]
