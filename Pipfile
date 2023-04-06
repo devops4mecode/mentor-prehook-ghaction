@@ -12,6 +12,3 @@ pylint = "*"
 
 [requires]
 python_version = "3.11"
-
-[scripts]
-lint = ["pylint $(git ls-files '*.py')"]

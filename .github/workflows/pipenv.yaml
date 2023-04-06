@@ -61,7 +61,6 @@ jobs:
 
       - name: Run linter
         run: |
-          pipenv install lint
           pipenv run lint
 
       - name: Run formatting check
