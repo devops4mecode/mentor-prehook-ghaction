@@ -6,8 +6,12 @@ name = "pypi"
 [packages]
 
 [dev-packages]
-lint = "2.0.0"
 pyright = "1.1.302"
+black = "*"
+pylint = "*"
 
 [requires]
 python_version = "3.11"
+
+[scripts]
+lint = ["black --check .", "pylint $(git ls-files '*.py')"]
