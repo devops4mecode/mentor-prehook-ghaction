@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 
 [dev-packages]
-pyright = "1.1.302"
+pyright = "*"
 black = "*"
 pylint = "*"
 
