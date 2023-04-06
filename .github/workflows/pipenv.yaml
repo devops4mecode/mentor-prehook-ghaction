@@ -61,23 +61,24 @@ jobs:
           TEST_DB_USER: postgres
 
       - name: Run linter
-        if: always()
+        if: success() || failure()
         run: |
           pipenv install pylint
           pipenv run pylint main.py
 
       - name: Run formatting check
+        if: success() || failure()
         run: |
           pipenv run format --check
 
       - name: Setup node.js (for pyright)
-        if: always()
+        if: success() || failure()
         uses: actions/setup-node@v1
         with:
           node-version: "12"
 
       - name: Run type checking
-        if: always()
+        if: success() || failure()
         run: |
           npm install -g pyright
           pipenv run typecheck
