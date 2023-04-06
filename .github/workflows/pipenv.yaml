@@ -50,6 +50,7 @@ jobs:
           pipenv install --deploy --dev --skip-lock
 
       - name: Run test suite
+        if: always()
         run: |
           pipenv run test -svvv
         env:
@@ -60,6 +61,7 @@ jobs:
           TEST_DB_USER: postgres
 
       - name: Run linter
+        if: always()
         run: |
           pipenv install pylint
           pipenv run pylint main.py
@@ -69,11 +71,13 @@ jobs:
           pipenv run format --check
 
       - name: Setup node.js (for pyright)
+        if: always()
         uses: actions/setup-node@v1
         with:
           node-version: "12"
 
       - name: Run type checking
+        if: always()
         run: |
           npm install -g pyright
           pipenv run typecheck
